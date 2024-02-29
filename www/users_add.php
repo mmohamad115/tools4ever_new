@@ -7,7 +7,7 @@ if (!isset($_SESSION['user_id'])) {
     exit;
 }
 
-if ($_SESSION['role'] != 'admin') {
+if ($_SESSION['role'] != 'administrator') {
     echo "You are not allowed to view this page, please login as admin";
     exit;
 }
@@ -57,7 +57,7 @@ require 'header.php';
                 <label for="role">Rol:</label>
                 <select id="role" name="role">
                     <option value="">Selecteer Rol</option>
-                    <option value="admin">Admin</option>
+                    <option value="administrator">Admin</option>
                     <option value="employee">Werknemer</option>
                 </select>
             </div>
